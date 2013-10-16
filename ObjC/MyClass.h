@@ -27,6 +27,8 @@
 - (void) func1:(int)setI;
 - (void) func2;
 
+// - (void)secret privately implemented and interfaced by extension
+
 @end
 
 #pragma message "Hello ausserhalb"

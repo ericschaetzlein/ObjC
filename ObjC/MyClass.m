@@ -92,6 +92,10 @@
     return _f + (float)i;
 }
 
+- (void)secret {
+    NSLog(@"secret");
+}
+
 @end
 
 void ausserhalb(int i) {

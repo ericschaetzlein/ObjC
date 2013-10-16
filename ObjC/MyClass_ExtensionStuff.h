@@ -15,11 +15,3 @@
 @property int newProperty;
 - (void)secret;
 @end
-
-@implementation MyClass
-
-- (void)secret {
-    
-}
-
-@end

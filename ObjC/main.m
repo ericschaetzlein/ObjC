@@ -39,6 +39,7 @@ int main(int argc, const char * argv[])
         myclass.i = 1;
         NSLog(@"myclass f %f %f", myclass.f, myclass.fplusi);
         ausserhalb(15);
+        [myclass secret];
         
         @try {
             //@throw myclass;
