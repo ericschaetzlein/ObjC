@@ -38,8 +38,8 @@
 		073BDEB5180948790062CFC2 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 		07D70672180D5B6400F65DAD /* MyClass+CategoryStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyClass+CategoryStuff.h"; sourceTree = "<group>"; };
 		07D70673180D5B6400F65DAD /* MyClass+CategoryStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyClass+CategoryStuff.m"; sourceTree = "<group>"; };
-		07D70676180D5BAA00F65DAD /* MySubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySubClass.h; path = ../MySubClass.h; sourceTree = "<group>"; };
-		07D70677180D5BAA00F65DAD /* MySubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySubClass.m; path = ../MySubClass.m; sourceTree = "<group>"; };
+		07D70676180D5BAA00F65DAD /* MySubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySubClass.h; sourceTree = "<group>"; };
+		07D70677180D5BAA00F65DAD /* MySubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySubClass.m; sourceTree = "<group>"; };
 		07D7067C180D786600F65DAD /* MyClass_ExtensionStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass_ExtensionStuff.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
