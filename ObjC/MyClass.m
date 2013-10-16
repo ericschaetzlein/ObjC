@@ -9,10 +9,17 @@
 #import "MyClass.h"
 
 @implementation MyClass
+{
+    // @private is default and not changeable!
+    int implementation_var_private; // will not be visible to subclasses!!
+@protected // doesn't matter
+    int implementation_var_protected; // will still not be visible to subclasses!!
+}
 
-@synthesize i;
-@synthesize f = _f;
-
+@synthesize i; // for property i: create instance variable: int i (otherwise _i)
+//unnecessary, since default:
+//@synthesize f = _f; // use existing instance variable: float _f
+//@dynamic lastName;
 
 #pragma mark Class methods
 
@@ -64,12 +71,18 @@
     self = [super init];
     if (self) {
         i = 99;
+        _lastName = @"SomeString";
+        
+        nsInt = 19;
+        implementation_var_private = -100;
+        enemy = 1;
     }
     return self;
 }
 
 #pragma mark func Stuff
 
+    
 - (void)func1:(int)bla
 {
     NSLog(@"func1 bla [%d] i [%d]", bla, (int)i);
@@ -85,6 +98,13 @@
     i = 1;
 }
 
+- (void)setty:(int)iNew
+{
+    NSLog(@"setty iNew [%d]", iNew);
+
+    i = iNew;
+}
+
 - (float)fplusi
 {
     return self.f + (float)i;
@@ -92,8 +112,14 @@
     return _f + (float)i;
 }
 
-- (void)secret {
+- (void)secret
+{
     NSLog(@"secret");
+}
+
+- (void)methodWithArg1:(int)a1 andArg2:(int)a2 andArg3:(float)a3
+{
+    NSLog(@"methodWithArg1:andArg2:andArg3:");
 }
 
 @end
