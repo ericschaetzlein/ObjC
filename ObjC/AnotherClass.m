@@ -7,7 +7,8 @@
 //
 
 #import "AnotherClass.h"
-#import "MyClass.h" // because we access instance methods
+//#import "MyClass.h" // because we access instance methods
+#import "MySubClass.h" // because we access instance methods
 
 @class MyClass; // forward class
 
@@ -17,7 +18,9 @@
 - (void)someMethodWithInt:(int)i
 {
     someProperty = i;
-    MyClass *m = [MyClass new];
+    MyClass *m = [MySubClass new];
+    anycalculatorclass = m;
+    myclasscalculatorclass = m;
 }
 
 @end

@@ -8,6 +8,15 @@
 
 #import "MyClass.h"
 
+@interface MyClass () // anonymous/private category, much like an Extension
+//also possible: @interface MyClass () <private_protocol>
+{
+    int privateInt;
+}
+- (void) privateMethod;
+@end
+
+
 @implementation MyClass
 {
     // @private is default and not changeable!
@@ -17,9 +26,31 @@
 }
 
 @synthesize i; // for property i: create instance variable: int i (otherwise _i)
-//unnecessary, since default:
+//unnecessary, since default: (auto property synthesis)
 //@synthesize f = _f; // use existing instance variable: float _f
 //@dynamic lastName;
+
+- (void) privateMethod
+{
+    return;
+}
+
+# pragma mark protocol stuff
+
+@synthesize a = a;
+@synthesize b = b;
+
+
++ (int)add:(int) x to: (int) y
+{
+    return y+x;
+}
+
++ (int)sub:(int) x from: (int) y;
+{
+    return y-x;
+}
+
 
 #pragma mark Class methods
 

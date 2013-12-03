@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Calculator.h"
 
-@interface MyClass : NSObject
+@interface MyClass : NSObject<Calculator>
 // here come the instance variables
 {
 //@protected is default. subclassses cann access protected ivars
