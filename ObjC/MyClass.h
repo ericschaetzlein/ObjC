@@ -12,7 +12,7 @@
 @interface MyClass : NSObject<Calculator>
 // here come the instance variables
 {
-//@protected is default. subclassses cann access protected ivars
+//@protected is default. subclassses can access protected ivars
     NSInteger nsInt;
     // synthesized by @property:
     //int i;
