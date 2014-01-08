@@ -12,6 +12,8 @@
 
 #pragma mark init Stuff
 
+@synthesize b = _b;
+
 - (id)init
 {
     self = [super init];
@@ -35,6 +37,7 @@
     
     [self setty:-1];
     self.i = -2;
+    NSString *test = [NSString stringWithFormat:@"deutsch"];
 }
 
 @end
